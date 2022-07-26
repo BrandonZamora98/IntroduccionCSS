@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes introduccion css</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css"> <!--etiqueta link para enlazar a la hoja de estilo-->
+    <!--Podemos agregar estilos de 3 formas
+    
+    - Externa con la etiqueta <link> (buena practica de programacion)
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    - Interna directamente en el atributo de la etiqueta
+        <p style="font-size: medium; color: blueviolet;">
+
+    - Interna dentro de la etiqueta <style>
+        <style> p { color: brown;} </style>
+
+    -->
+
+</head>
+<body>
+    <!--
+    cuando agregamos estilos de forma interna, siempre se tomara con mayor jerarquia el estilo 
+    que este incrustado directamente en la etiqueta, pasando por alto todos estilos adicionales 
+    que lo afecten
+
+    jerarquia:
+        1 lo que esta de forma interna en la etiqueta
+        2 lo que se agrega dentro de etiquetas <style>
+        3 lo que se agraga de forma externa 
+    -->
+    <p style="font-size: medium; color: red">Este es un parrafo para probar diferentes estilos mala practica</p>
+
+    <p id="parrafo-uno">Este es u parrafo para probar diferentes estilos mala practica</p>
+    <!--
+    <style>
+        p{
+            color: rgb(38, 38, 168);
+        }
+    </style>
+    -->
+
+    <p id="parrafo-dos">Este es u parrafo para probar diferentes estilos buena practica</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, rerum?</p>
+
+    <h3>Este es el salon de clases de la Cohorte 15</h3>
+    
+    <br>
+
+    <span id="jaciel" class="Cohorte-15">jaciel</span>
+    <br>
+    <span id="maryana" class="Cohorte-15">maryana</span>
+    <br>
+    <span id="paulina" class="Cohorte-15">paulina</span>
+    <br>
+    <span id="vanesa" class="Cohorte-15">vanesa</span>
+    <br>
+    <span id="ulises" class="Cohorte-15">ulises</span>
+
+    <div class="caja">
+        Hola, soy un div!! usame para mostrar el modelo de cajas XD
+    </div>
+</body>
+</html>
